@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Urbant*/
+@font-face {
+  font-family: 'Urbanist', sans-serif; 
+  src: url(../fonts/static/Urbanist-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Urbanist', sans-serif;
+  src: url(../fonts/static/Urbanist-Medium.ttf);
+}
+
+.urbanist-bold {
+  font-family: 'Urbanist', sans-serif; 
+}
+
+.urbanist-medium {
+  font-family: 'Urbanist', sans-serif; 
+}
