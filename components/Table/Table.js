@@ -83,8 +83,8 @@ const Table = () => {
 
                             <tbody>
                                 {
-                                    data && data.map((item) => (
-                                        <tr className=" border-b hover:bg-[#F3F4F6]">
+                                    data && data.map((item ,index) => (
+                                        <tr key={index} className=" border-b hover:bg-[#F3F4F6]">
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>{item.no}</td>
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
                                                 {item.name}
