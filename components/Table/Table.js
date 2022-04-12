@@ -73,7 +73,7 @@ const Table = () => {
                                     <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
                                         Award
                                     </th>
-                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
+                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-right '>
                                         Year
                                     </th>
                                     <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium'>
@@ -89,10 +89,10 @@ const Table = () => {
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
                                                 {item.name}
                                             </td>
-                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
+                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium text-right'>
                                                 {item.year}
                                             </td>
-                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
+                                            <td className='text-[#4B5563] leading-[150%] text-2xl not-italic font-medium urbanist-medium flex justify-end items-end'>
                                                 <img src={item.image} alt='award Imgaes' />
                                             </td>
                                         </tr>
