@@ -67,13 +67,13 @@ const Table = () => {
                         <table className="min-w-full">
                             <thead className="border-b">
                                 <tr >
-                                    <th scope="col" className='text-[#1F2937] leading-[135%] text-base not-italic font-semibold urbanist-medium'>
+                                    <th scope="col" className='text-[#1F2937] leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
                                         Sr.No
                                     </th>
-                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium'>
+                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
                                         Award
                                     </th>
-                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium'>
+                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
                                         Year
                                     </th>
                                     <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium'>
@@ -84,8 +84,8 @@ const Table = () => {
                             <tbody>
                                 {
                                     data && data.map((item ,index) => (
-                                        <tr key={index} className=" border-b hover:bg-[#F3F4F6]">
-                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>{item.no}</td>
+                                        <tr key={index} className=" border-b hover:bg-[#F3F4F6] ">
+                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium py-6'>{item.no}</td>
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
                                                 {item.name}
                                             </td>
