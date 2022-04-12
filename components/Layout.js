@@ -3,14 +3,13 @@ import Footer from './Footer/Footer'
 import Header from './Header'
 import Slider from './Slider/Slider'
 import Table from './Table/Table'
-
 const Layout = () => {
   return (
     <div>
       <Header />
-      {/* <Slider /> */}
+      <Slider />
       <Table />
-      <Footer/>
+      <Footer />
 
     </div>
   )

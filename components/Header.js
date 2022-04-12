@@ -11,7 +11,7 @@ const Header = () => {
                     </div>
 
                     <div className='flex justify-between space-x-[36px] items-center'>
-                        <div className='text-[#4B5563] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'>
+                        <div className='text-[#4B5563] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>
                             <Link href="/">Watch & Learn</Link>
                         </div>
                         <div className='text-[#4B5563] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'>
@@ -20,7 +20,7 @@ const Header = () => {
                         <div className='text-[#4B5563] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'>
                             <Link href="/">Our Team</Link>
                         </div>
-                        <div className='text-[#1F2937] -tracking-[0.02em] leading-[135%] text-base not-italic font-bold border-b-[#FFE600] border-b-2 urbanist-bold'>
+                        <div className='text-[#1F2937] -tracking-[0.02em] leading-[135%] text-base not-italic font-bold focus:border-b-2 border-b-[#FFE600] border-b-2 urbanist-bold'>
                             <Link href="/">Bragging Rights</Link>
                         </div>
                         <div className='text-[#4B5563] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'>

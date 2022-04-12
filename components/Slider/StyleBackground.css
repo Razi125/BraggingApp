@@ -1,0 +1,244 @@
+/* CrouselSlider START IN CSS */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: red;
+}
+
+::-ms-input-placeholder {
+  color: red;
+}
+.MuiGrid-container {
+  display: block;
+}
+.home_testimonial {
+  width: 100%;
+}
+.home_testimonial .testimonial {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  margin-top: 4%;
+  background: unset;
+}
+.testimonial .container {
+  width: 100%;
+
+  margin: 0 auto;
+}
+.testimonial .testimonial_card {
+  display: flex;
+  padding: 0px !important;
+  justify-content: space-evenly;
+  background: unset;
+}
+.testimonial_card .crousel_images {
+  max-width: 31%;
+  height: auto;
+}
+.testimonial_card .crousel_images h1 {
+  width: fit-content;
+  color: #8ea4a7;
+  text-align: left !important;
+  margin-left: 50px;
+  padding-bottom: 25px;
+  font-size: 40px;
+  border-bottom: 3px solid #2f575d;
+}
+.testimonial_card .crousel_images h1 span {
+  color: #2f575d !important;
+  padding-right: 10px;
+}
+.testimonial_card .crousel_images img {
+  width: 100%;
+}
+.testimonial_card .crousel_content {
+  position: relative;
+  width: 600px;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.37;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.testimonial_card .crousel_content P {
+  color: white;
+  font-size: 1.4rem;
+  padding-left: 4%;
+  opacity: 0.6;
+}
+.testimonial_card .crousel_content h3 {
+  color: white;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bold;
+}
+.testimonial_card .crousel_content .uppercomma {
+  position: absolute;
+  top: 5rem;
+  left: -1.8rem;
+}
+.testimonial_card .crousel_content .class_lowercomma {
+  position: absolute;
+  right: 33rem;
+  top: 18.7rem;
+}
+
+.testimonial_card .crousel_content .class_lowercomma1 {
+  position: absolute;
+  left: 33.3rem;
+  top: 20.9rem;
+}
+.testimonial_card .crousel_content .class_lowercomma2 {
+  position: absolute;
+  left: 29rem;
+  bottom: 7.9rem;
+}
+.testimonial_card .crousel_content .class_lowercomma3 {
+  position: absolute;
+  right: 14.1rem;
+  bottom: 8.5rem;
+}
+.testimonial_card .crousel_content img {
+  width: 23px;
+  /* margin: 58px -34px -35px -31px; */
+}
+.testimonial_card .crousel_content .img1 {
+  float: right;
+  margin: -46px 155px;
+}
+
+.control-arrow.control-prev {
+  left: 0 !important;
+}
+.control-arrow.control-next {
+  right: 0 !important;
+}
+
+.carousel .slide {
+  background: #fff !important;
+  color: black;
+  height: 100%;
+}
+
+.myCarousel {
+  background: #446fb5;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #446fb5;
+  height: 286px;
+}
+
+.home_testimonial .testimonial .carousel-root .carousel .control-dots {
+  outline: 0;
+  bottom: 4% !important;
+  padding-left: 0px !important;
+}
+
+.myCarousel h3 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  font-weight: 100 !important;
+  line-height: 29px !important;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  outline: 0;
+}
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: #2f575d;
+}
+.carousel.carousel-slider {
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 auto;
+  overflow: initial !important;
+}
+.carousel.carousel-slider .control-arrow {
+  background: white !important;
+  height: 60px !important;
+  width: 60px;
+  border: 1px solid #2f575d;
+  border-radius: 50%;
+  position: absolute;
+  top: 28% !important;
+}
+
+.control-prev::before {
+  border-right: 8px solid #2f575d !important;
+}
+
+.control-next::before {
+  border-left: 8px solid #2f575d !important;
+}
+
+.home_testimonial .testimonial .carousel-root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+}
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-6.MuiGrid-grid-md-6.MuiGrid-grid-lg-6.MuiGrid-grid-xl-6 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 100% !important;
+  overflow: hidden;
+  flex-basis: unset;
+  flex-grow: unset;
+}
