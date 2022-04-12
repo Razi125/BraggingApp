@@ -1,18 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import InputBtn from '../common/InputBtn'
 import FooterBttom from './FooterBttom'
 
 const Footer = () => {
+    const [active , setActive] = useState(1)
     return (
-        <div className='bg-[#111827] rounded-2xl'>
+        <div className='bg-[#111827] rounded-t-2xl '>
             <div className='mx-auto container '>
                 <div className='flex flex-col xl:flex-row justify-between items-center'>
                      {/** First */}
-                        <div className='flex flex-col mb-10'>
+                        <div className='flex flex-col items-center md:items-start text-center md:text-left md:justify-start mb-10'>
                             <div>
                             <img className='pt-12 ' src='./images/logo.svg' alt=''/> 
                             </div>
-                            <div>
+                            <div >
                             <p  className='max-w-[82px] text-[#FFFFFF] leading-[135%] text-lg not-italic font-bold urbanist-medium py-[14px]'>Blumstein</p>
                             </div>
                             <div>
@@ -21,40 +22,40 @@ const Footer = () => {
                         </div>
         
                         {/** Second */}
-                        <div className='flex flex-row space-x-[121px]'>
+                        <div className='flex flex-row space-x-5 md:space-x-[121px]'>
                             <div className='pt-[80px] space-y-[18px]'>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Watch & Learn</p>
+                            <div onClick={() => setActive(1)}>
+                                <p className= {active === 1 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Watch & Learn</p>
                             </div>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Bragging Rights</p>
+                            <div onClick={() => setActive(2)}>
+                                <p className= {active === 2 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Bragging Rights</p>
                             </div>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Trustimonials</p>
+                            <div onClick={() => setActive(3)}>
+                                <p className= {active === 3 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Trustimonials</p>
                             </div>
                             </div>
 
                             <div className='pt-[80px] space-y-[18px]'>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Read & Learn</p>
+                            <div onClick={() => setActive(4)}>
+                                <p className= {active === 4 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Read & Learn</p>
                             </div>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Our Current Listings</p>
+                            <div onClick={() => setActive(5)}>
+                                <p className= {active === 5 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Our Current Listings</p>
                             </div>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>See us in Action</p>
+                            <div onClick={() => setActive(6)}>
+                                <p className= {active === 6 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>See us in Action</p>
                             </div>
                             </div>
 
                             <div className='pt-[80px] space-y-[18px]'>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Our Team</p>
+                            <div onClick={() => setActive(7)}>
+                                <p className= {active === 7 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Our Team</p>
                             </div>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Press</p>
+                            <div onClick={() => setActive(8)}>
+                                <p className= {active === 8 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Press</p>
                             </div>
-                            <div>
-                                <p className='max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium '>Contact us</p>
+                            <div onClick={() => setActive(9)}>
+                                <p className= {active === 9 ? 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic font-medium urbanist-medium': 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Contact us</p>
                             </div>
                             </div>
                         </div>   
@@ -62,7 +63,7 @@ const Footer = () => {
                        {/** Third Component */}
                         <div className='pt-[80px] '>
                             <div >
-                            <p className='max-w-[400px] text-[#FFFFFF]  leading-5 text-lg not-italic font-bold urbanist-medium  pb-[26px]'>Stay Updated with Team Blumstein</p>
+                            <p className='max-w-[400px] text-center md:text-left text-[#FFFFFF]  leading-5 text-lg not-italic font-bold urbanist-medium  pb-[26px]'>Stay Updated with Team Blumstein</p>
                             </div>
                             <div>
                             <InputBtn/>
