@@ -60,7 +60,7 @@ const Table = () => {
         },
     ]
     return (
-        <div className="mx-auto px-6 container flex flex-col ">
+        <div className="mx-auto px-6 container flex flex-col  mb-24">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
                     <div className="overflow-hidden">
@@ -73,7 +73,7 @@ const Table = () => {
                                     <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
                                         Award
                                     </th>
-                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-right '>
+                                    <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium text-inherit pr-[22px]'>
                                         Year
                                     </th>
                                     <th scope="col" className='text-[#1F2937]  leading-[135%] text-base not-italic font-semibold urbanist-medium'>
@@ -83,16 +83,16 @@ const Table = () => {
 
                             <tbody>
                                 {
-                                    data && data.map((item ,index) => (
+                                    data && data.map((item, index) => (
                                         <tr key={index} className=" border-b hover:bg-[#F3F4F6] ">
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium py-6'>{item.no}</td>
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
                                                 {item.name}
                                             </td>
-                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium text-right'>
+                                            <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium text-center'>
                                                 {item.year}
                                             </td>
-                                            <td className='text-[#4B5563] leading-[150%] text-2xl not-italic font-medium urbanist-medium flex justify-end items-end'>
+                                            <td className='text-[#4B5563] leading-[150%] text-2xl not-italic font-medium urbanist-medium flex justify-center items-center'>
                                                 <img src={item.image} alt='award Imgaes' />
                                             </td>
                                         </tr>
