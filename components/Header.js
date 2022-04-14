@@ -58,7 +58,6 @@ const Header = () => {
                     <div className='pt-3'>
                         <img src='./images/Blumstein-logo.svg' alt='Blumstein Logo' />
                     </div>
-
                     <div className='flex justify-between space-x-[36px] items-center'>
                         {
                             data?.map((item, index) => (
@@ -66,7 +65,7 @@ const Header = () => {
                                     setActive(item.link)
 
                                 }}
-                                    className={`${active == item.link ? "text-[#1F2937] -tracking-[0.02em] leading-[135%] text-base not-italic font-bold border-b-2 border-b-[#FFE600] urbanist-bold " : " text-[#4B5563] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium"} hover:border-b-[#FFE600]  hover:text-[#1F2937]`}>
+                                    className={`-tracking-[0.02em] leading-[135%] text-base not-italic urbanist-medium h-[20px] hover:border-b-[#FFE600]  hover:text-[#1F2937] ${active == item.link ? "text-[#1F2937]  border-b-2 border-b-[#FFE600]" : " text-[#4B5563]"}`}>
                                     <Link href={''}>{item.name}</Link>
                                 </div>
                             ))
