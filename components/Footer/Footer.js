@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import InputBtn from '../common/InputBtn'
 import FooterBttom from './FooterBttom'
-
+import Link from 'next/link'
 const Footer = () => {
     const [active, setActive] = useState(1)
     return (
@@ -22,40 +22,40 @@ const Footer = () => {
                     </div>
 
                     {/** Second */}
-                    <div className='flex flex-row space-x-5 md:space-x-[121px]'>
+                    <div className='flex flex-row space-x-5 md:space-x-[80px]'>
                         <div className='pt-[80px] space-y-[18px]'>
                             <div onClick={() => setActive(1)}>
-                                <p className={active === 1 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Watch & Learn</p>
+                                <p className={active === 1 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Watch & Learn</Link> </p>
                             </div>
                             <div onClick={() => setActive(2)}>
-                                <p className={active === 2 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Bragging Rights</p>
+                                <p className={active === 2 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Bragging Rights</Link></p>
                             </div>
                             <div onClick={() => setActive(3)}>
-                                <p className={active === 3 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Trustimonials</p>
+                                <p className={active === 3 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Trustimonials</Link></p>
                             </div>
                         </div>
 
                         <div className='pt-[80px] space-y-[18px]'>
                             <div onClick={() => setActive(4)}>
-                                <p className={active === 4 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Read & Learn</p>
+                                <p className={active === 4 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Read & Learn</Link></p>
                             </div>
                             <div onClick={() => setActive(5)}>
-                                <p className={active === 5 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Our Current Listings</p>
+                                <p className={active === 5 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Our Current Listings</Link></p>
                             </div>
                             <div onClick={() => setActive(6)}>
-                                <p className={active === 6 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>See us in Action</p>
+                                <p className={active === 6 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>See us in Action</Link></p>
                             </div>
                         </div>
 
                         <div className='pt-[80px] space-y-[18px]'>
                             <div onClick={() => setActive(7)}>
-                                <p className={active === 7 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold  -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Our Team</p>
+                                <p className={active === 7 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold  -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Our Team</Link></p>
                             </div>
                             <div onClick={() => setActive(8)}>
-                                <p className={active === 8 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Press</p>
+                                <p className={active === 8 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Press</Link></p>
                             </div>
                             <div onClick={() => setActive(9)}>
-                                <p className={active === 9 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}>Contact us</p>
+                                <p className={active === 9 ? 'max-w-[201.33px] text-[#FFFFFF] font-bold -tracking-[0.02em] border-b-[#FFE600] border-b-2 leading-[135%] text-base not-italic  urbanist-medium' : 'max-w-[201.33px] text-[#9CA3AF] -tracking-[0.02em] leading-[135%] text-base not-italic font-medium urbanist-medium'}><Link href='/'>Contact us</Link></p>
                             </div>
                         </div>
                     </div>

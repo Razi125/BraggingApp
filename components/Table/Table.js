@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Link from 'next/link'
+import Router from 'next/router'
 const Table = () => {
     const data = [
         {
+            id: 1,
             no: '01',
             name: 'Chelsea Sales Team of the Year',
             year: 2021,
@@ -10,6 +12,7 @@ const Table = () => {
 
         },
         {
+            id: 2,
             no: '02',
             name: 'Corcorans Top 25',
             year: 2021,
@@ -17,6 +20,7 @@ const Table = () => {
 
         },
         {
+            id: 3,
             no: '03',
             name: 'Presidents Council',
             year: 2021,
@@ -24,6 +28,7 @@ const Table = () => {
 
         },
         {
+            id: 4,
             no: '04',
             name: 'NRT Top 1% Broker in the USA',
             year: 2020,
@@ -31,6 +36,7 @@ const Table = () => {
 
         },
         {
+            id: 5,
             no: '05',
             name: 'NRT Top 100 Teams',
             year: 2020,
@@ -38,6 +44,7 @@ const Table = () => {
 
         },
         {
+            id: 6,
             no: '06',
             name: 'Wall Street Journal Real Estate Top 100',
             year: 2020,
@@ -45,6 +52,7 @@ const Table = () => {
 
         },
         {
+            id: 7,
             no: '07',
             name: 'Village Team of the Year',
             year: 2019,
@@ -52,6 +60,7 @@ const Table = () => {
 
         },
         {
+            id: 8,
             no: '08',
             name: 'Certified Negotiation Expert',
             year: 2021,
@@ -66,7 +75,7 @@ const Table = () => {
                     <div className="overflow-hidden">
                         <table className="min-w-full">
                             <thead className="border-b">
-                                <tr >
+                                <tr>
                                     <th scope="col" className='text-[#1F2937] leading-[135%] text-base not-italic font-semibold urbanist-medium text-left'>
                                         Sr.No
                                     </th>
@@ -84,7 +93,8 @@ const Table = () => {
                             <tbody>
                                 {
                                     data && data.map((item, index) => (
-                                        <tr key={index} className=" border-b hover:bg-[#F3F4F6] ">
+
+                                        <tr key={index} className=" border-b hover:bg-[#F3F4F6] cursor-pointer" onClick={() => Router.push(`/details/${item.id}`)}>
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium py-6'>{item.no}</td>
                                             <td className='text-[#4B5563]  leading-[150%] text-2xl not-italic font-medium urbanist-medium'>
                                                 {item.name}
