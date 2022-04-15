@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Details = ({ courseId }) => {
-    
+
     const data = [
         {
             id: 1,
@@ -68,26 +68,26 @@ const Details = ({ courseId }) => {
 
         },
     ]
-    
+
     const FilterData = data.filter(item => courseId.includes(item.id))
 
 
     return (
         <>
-           <div className='mx-auto container  flex flex-col justify-center items-center text-center rounded-xl mt-5 bg-white border-2 w-full '>
-            <div><h1 className='text-black font-semibold text-center text-4xl pb-4'> Details</h1></div>
-              <div >
+            <div className='mx-auto container  flex flex-col justify-center items-center text-center rounded-xl mt-5 bg-white border-2 w-full '>
+                <div><h1 className='text-black font-semibold text-center text-4xl pb-4'> Details</h1></div>
+                <div >
                     {
-                        FilterData?.map((item)=>(
-                            <div className='space-y-4'>
-                            <h1 className='text-gray-900 text-xl font-semibold'>{item.no}</h1>
-                            <h4 className='text-gray-900 text-xl font-semibold'>{item.name}</h4>
-                            <p className='text-gray-900 text-xl font-semibold'>{item.year}</p>
+                        FilterData?.map((item, index) => (
+                            <div key={index} className='space-y-4'>
+                                <h1 className='text-gray-900 text-xl font-semibold'>{item.no}</h1>
+                                <h4 className='text-gray-900 text-xl font-semibold'>{item.name}</h4>
+                                <p className='text-gray-900 text-xl font-semibold'>{item.year}</p>
                             </div>
                         ))
                     }
-                                  </div>
-                    
+                </div>
+
             </div>
         </>
 
