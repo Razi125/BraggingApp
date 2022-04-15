@@ -69,7 +69,7 @@ const Details = ({ courseId }) => {
         },
     ]
 
-    const FilterData = data.filter(item => courseId.includes(item.id))
+    //  FilterData = data.filter(item => courseId.includes(item.id))
 
 
     return (
@@ -78,7 +78,7 @@ const Details = ({ courseId }) => {
                 <div><h1 className='text-black font-semibold text-center text-4xl pb-4'> Details</h1></div>
                 <div >
                     {
-                        FilterData?.map((item, index) => (
+                        data?.map((item, index) => (
                             <div key={index} className='space-y-4'>
                                 <h1 className='text-gray-900 text-xl font-semibold'>{item.no}</h1>
                                 <h4 className='text-gray-900 text-xl font-semibold'>{item.name}</h4>
