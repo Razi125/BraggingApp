@@ -88,9 +88,9 @@ const Details = ({ courseId }) => {
                     {
                         data1?.map((item, index) => (
                             <div key={index} className='space-y-4'>
-                                <h1 className='text-gray-900 text-xl font-semibold'>{item.no}</h1>
-                                <h4 className='text-gray-900 text-xl font-semibold'>{item.name}</h4>
-                                <p className='text-gray-900 text-xl font-semibold'>{item.year}</p>
+                                <h1 className='text-gray-500 text-xl font-semibold'>{item.no}</h1>
+                                <h4 className='text-gray-500 text-xl font-semibold'>{item.name}</h4>
+                                <p className='text-gray-500 text-xl font-semibold'>{item.year}</p>
                             </div>
                         ))
                     }
