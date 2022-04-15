@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Details = ({ courseId }) => {
+    const [data1, setData1] = useState([])
+    console.log("data1 -->", data1);
 
     const data = [
         {
@@ -68,8 +70,14 @@ const Details = ({ courseId }) => {
 
         },
     ]
+    useEffect(() => {
+        return () => {
+            let FilterData = data.filter(item => courseId.includes(item.id))
+            setData1(FilterData)
+        };
+    }, [])
 
-    //  FilterData = data.filter(item => courseId.includes(item.id))
+
 
 
     return (
@@ -78,7 +86,7 @@ const Details = ({ courseId }) => {
                 <div><h1 className='text-black font-semibold text-center text-4xl pb-4'> Details</h1></div>
                 <div >
                     {
-                        data?.map((item, index) => (
+                        data1?.map((item, index) => (
                             <div key={index} className='space-y-4'>
                                 <h1 className='text-gray-900 text-xl font-semibold'>{item.no}</h1>
                                 <h4 className='text-gray-900 text-xl font-semibold'>{item.name}</h4>
