@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React,{useEffect , useState} from 'react'
 
 const Details = ({ courseId }) => {
-    const [data1, setData1] = useState([])
-    console.log("data1 -->", data1);
 
+    const [item , setItem] = useState([])
     const data = [
         {
             id: 1,
@@ -70,10 +69,12 @@ const Details = ({ courseId }) => {
 
         },
     ]
+
     useEffect(() => {
-            let FilterData = data.filter(item => courseId.includes(item.id))
-            setData1(FilterData)
-    }, [FilterData])
+        let FilterData = data.filter(item => courseId.includes(item.id))
+        setItem(FilterData)
+    }, [])
+
 
 
 
@@ -83,11 +84,11 @@ const Details = ({ courseId }) => {
                 <div><h1 className='text-black font-semibold text-center text-4xl pb-4'> Details</h1></div>
                 <div >
                     {
-                        data1?.map((item, index) => (
+                        item?.map((item, index) => (
                             <div key={index} className='space-y-4'>
-                                <h1 className='text-gray-500 text-xl font-semibold'>{item.no}</h1>
-                                <h4 className='text-gray-500 text-xl font-semibold'>{item.name}</h4>
-                                <p className='text-gray-500 text-xl font-semibold'>{item.year}</p>
+                                <h1 className='text-gray-900 text-xl font-semibold'>{item.no}</h1>
+                                <h4 className='text-gray-900 text-xl font-semibold'>{item.name}</h4>
+                                <p className='text-gray-900 text-xl font-semibold'>{item.year}</p>
                             </div>
                         ))
                     }
