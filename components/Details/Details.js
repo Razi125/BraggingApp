@@ -71,12 +71,9 @@ const Details = ({ courseId }) => {
         },
     ]
     useEffect(() => {
-        return () => {
             let FilterData = data.filter(item => courseId.includes(item.id))
             setData1(FilterData)
-        };
-    }, [])
-
+    }, [FilterData])
 
 
 
